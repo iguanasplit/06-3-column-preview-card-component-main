@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/3column-preview-card-component-solution-myvOHqQY-r](https://www.frontendmentor.io/solutions/3column-preview-card-component-solution-myvOHqQY-r)
+- Live Site URL: [06-3-column-preview-card-component-main](https://iguanasplit.github.io/06-3-column-preview-card-component-main/)
 
 ### Built with
 
