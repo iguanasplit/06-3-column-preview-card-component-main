@@ -1,1 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
+:root {
+
+
+
+ /*MAIN COLORS*/
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+/*NEUTRAL COLORS*/
+
+--Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+--Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+    font-size: 15px;
+}
+
+
+* {
+ 
+font-family: 'Lexend Deca', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 100% auto;
+    background-color: var(--Very-light-gray);
+    
+
+}
+
+
+
+img{
+    
+        position: relative;
+        height: auto;
+        width:5rem;
+    
+}
+
+
+
+.headimg{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+    opacity: 1;
+    background-color: var(--Soft-violet);
+}
+/*TEXT FORMAT_____________________________________________________________________________*/
+/*TEXT FORMAT_____________________________________________________________________________*/
+
+
+
+h1 {
+
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    
+
+}
+
+h2 {
+
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    font-size: 2.5rem;
+    text-align:start;
+    font-weight: 700;
+    text-transform:uppercase;
+
+   
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+
+p {
+
+    color: var(--Transparent-white);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+   
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    text-align:start;
+    overflow-wrap: break-word;
+    word-break:keep-all;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+/*CONTENT_____________________________________________________________________________*/
+/*CONTENT______________________________________________________________________________*/
+
+/*INTERACTIVE-----------------------------------------------------------------------------*/
+button {
+ 
+     background-color:var(--Very-light-gray);
+    text-align:center;
+    border-radius: 40px;
+    border: 2px solid var(--Very-light-gray);
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-top:30px;
+    
+    
+    transition: .4s ease-in-out;
+}
+
+.b1{
+    color:var(--Bright-orange);
+}
+
+.b2{
+    color:var(--Dark-cyan);
+}
+
+.b3{
+    color:var(--Very-dark-cyan);
+}
+
+ button:hover {
+
+    background-color:transparent;
+    color:var(--Very-light-gray);
+   border: 2px solid var(--Very-light-gray);
+
+
+} 
+
+/*Container_____________________________________________________________________________*/
+
+.card {
+
+    max-width:min(24rem, 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-radius: 20px;
+    
+  
+    
+}
+
+
+.col{
+  
+   
+   
+    padding:60px;
+}
+
+.columna1{
+
+    background-color:var(--Bright-orange) ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.columna2{
+
+    background-color:var(--Dark-cyan) ;
+}
+
+.columna3{
+
+    background-color:var(--Very-dark-cyan) ;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*Media Query______________________________________________________________________________________*/
+@media (min-width: 800px) {
+
+   
+
+    .card {
+
+     margin:30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        
+        overflow-wrap:break-word;
+        max-width:min(60rem, 100%);
+      
+        justify-content:space-between;
+        
+    }
+
+    h1 {
+
+       font-size: 2.8rem;
+       margin-top: 40px;
+    
+       margin-bottom: 5px;
+    
+    
+    }
+
+    button {
+ 
+       
+   
+       margin-top:60px;
+       
+  
+   }
+    
+    .col{
+  
+       display:flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content:space-between;
+        padding:45px;
+    }
+    .columna1{
+        
+        background-color:var(--Bright-orange) ;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .columna2{
+    
+        background-color:var(--Dark-cyan) ;
+    }
+    
+    .columna3{
+    
+        background-color:var(--Very-dark-cyan) ;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+   
+   
+    
+
+}
